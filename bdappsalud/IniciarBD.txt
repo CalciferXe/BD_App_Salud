@@ -1,0 +1,11 @@
+para iniciar la bd es necesario tener instalado el paquete next.js y node para el correcto funcionamiento.
+si los comandos "npx" no funcionan sera necesario editar el path  de las variables de entorno agregando la ruta ejemplo "C:\Users\alvar\AppData\Roaming\npm\bin"
+instalar pgsql tambien e iniciar la bd por default.
+Luego a través de sql Shell (Que viene incorporado con pgsql) crear una bd con el nombre que deseen por ejemplo "bd_app_salud" : create database bd_app_salud;
+recuerden que la contraseña de la bd asi como las variables para poder conectar la bd se encuentra en el archivo .env que esta dentro de la carpeta raiz
+luego ejecutar los siguientes comandos:
+
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
+
+Y la bd ya estara configurada listo para probar
